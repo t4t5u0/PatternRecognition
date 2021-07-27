@@ -12,6 +12,9 @@ def main():
     face = FaceArea(path).getGrayImage().faceArea().clip().norm64()
     norm_img_path = face.norm_img_path
     norm_img = face.norm_img
+    print(norm_img_path)
+    plt.plot(norm_img)
+    plt.show()
 
 
 if __name__ == '__main__':
